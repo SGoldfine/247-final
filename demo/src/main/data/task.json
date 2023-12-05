@@ -1,0 +1,22 @@
+[
+    {
+        "UUID": "113e7187-cefb-4993-a278-da64d665522a",
+        "taskName": "task1",
+        "assignedUser" : "2e060e4c-d377-48d9-bb95-d237d1959405",
+        "comment": "",
+        "priority": 2,
+        "estimatedTimeWorked": "10/16/2023",
+        "hours": 2.3,
+        "finished": false
+    },
+    {
+        "taskId": "a12a9754-5786-49e1-bfa3-2331a99e7936",
+        "taskName": "task2",
+        "assignedUser" : "40fa2bd3-3072-426a-b48a-2e3053ee372c",
+        "comment": "",
+        "priority": 1,
+        "estimatedTimeWorked": "10/20/2023",
+        "hours": 4.6,
+        "finished": false
+    }
+]
