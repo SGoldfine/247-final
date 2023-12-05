@@ -15,7 +15,7 @@
       </Label>
       <Label layoutX="27.0" layoutY="71.0" text="Username:" />
       <Label layoutX="27.0" layoutY="100.0" text="Password:" />
-      <Button layoutX="314.0" layoutY="84.0" mnemonicParsing="false" onMouseClicked="#btnLoginClicked" prefHeight="24.0" prefWidth="173.0" text="Login" />
+      <Button layoutX="314.0" layoutY="84.0" mnemonicParsing="false" onMouseClicked="#onLoginClicked" prefHeight="24.0" prefWidth="173.0" text="Login" />
       <TextField fx:id="txt_username" layoutX="116.0" layoutY="67.0" />
       <TextField fx:id="txt_password" layoutX="116.0" layoutY="96.0" />
       <Label fx:id="lbl_error" layoutX="116.0" layoutY="178.0" prefHeight="16.0" prefWidth="170.0" />

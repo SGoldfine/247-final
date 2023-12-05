@@ -20,20 +20,19 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import model.*;
+import projectmanager.App;
 
 public class HomeController implements Initializable {
     @FXML private AnchorPane home_pane;
     
     @FXML
-    private void onLoginCLicked(ActionEvent event) throws IOException {
-        home_pane.getChildren().clear();
-        home_pane.getChildren().add(FXMLLoader.load(getClass().getResource("/view/login.fxml")));
+    private void onLoginClicked(ActionEvent event) throws IOException {
+        App.setRoot("login");
     }
 
     @FXML
     private void onSignupClicked(ActionEvent event) throws IOException {
-        home_pane.getChildren().clear();
-        home_pane.getChildren().add(FXMLLoader.load(getClass().getResource("/view/signup.fxml")));
+        App.setRoot("signup");
     }
     
     @Override

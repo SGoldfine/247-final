@@ -30,7 +30,7 @@ public class SignupController implements Initializable {
     @FXML private Label lbl_error;
     
     @FXML
-    private void btnSignupClicked(MouseEvent event) throws IOException {
+    private void onSignupClicked(MouseEvent event) throws IOException {
         String username = txt_username.getText();
         String password = txt_password.getText();
         String firstName = txt_first_name.getText();
