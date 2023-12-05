@@ -17,9 +17,20 @@ import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import model.*;
+import projectmanager.App;
 
-public class UserHomeController {
+public class UserHomeController implements Initializable{
+    @FXML private AnchorPane home_pane;
     
+    @FXML
+    private void onHomeClicked(ActionEvent event) throws IOException {
+        App.setRoot("home");
+    }
+
+    @Override
+    public void initialize(URL url, ResourceBundle rb) {
+    }    
 }

@@ -18,6 +18,7 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import model.ProjectManagementSystem;
 import model.User;
+import projectmanager.App;
 
 
 public class SignupController implements Initializable {
@@ -52,14 +53,13 @@ public class SignupController implements Initializable {
         }
         
         pms.login(username, password);
-        User user = pms.getCurrentUser();
+        // User user = pms.getCurrentUser();
         switchScreen();
     }
     
     
     private void switchScreen() throws IOException {
-        signup_pane.getChildren().clear();
-        signup_pane.getChildren().add(FXMLLoader.load(getClass().getResource("/view/user_home.fxml")));
+       App.setRoot("user_home");
     }
     
     @Override
