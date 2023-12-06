@@ -36,6 +36,11 @@ public class LoginController implements Initializable {
     }
 
     @FXML
+    private void onSignupClicked(MouseEvent event) throws IOException {
+        App.setRoot("signup");
+    }
+
+    @FXML
     private void back(MouseEvent event) throws IOException {
         App.setRoot("home");
     }
