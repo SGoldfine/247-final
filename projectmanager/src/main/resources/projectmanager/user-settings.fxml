@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="userSettingsPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.UserSettingsController">
+    <VBox styleClass="settings-container" alignment="TOP_CENTER" AnchorPane.topAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+        <Label text="User Settings" styleClass="title-label" />
+        <HBox styleClass="content-box" spacing="20">
+            <VBox styleClass="role-container" spacing="10">
+                <Label fx:id="lblUsername" text="User 1" styleClass="username-label"/>
+                <HBox styleClass="role-item">
+                    <CheckBox fx:id="chkScrumMaster" text="Scrum master"/>
+                    <Label text="Scrum master: A user that leads the team utilizing project management skills" styleClass="role-description"/>
+                </HBox>
+                <HBox styleClass="role-item">
+                    <CheckBox fx:id="chkDeveloper" text="Developer"/>
+                    <Label text="Developer: A user that primarily works to create the code used in the project" styleClass="role-description"/>
+                </HBox>
+                <HBox styleClass="role-item">
+                    <CheckBox fx:id="chkUser" text="User"/>
+                    <Label text="User: Default user" styleClass="role-description"/>
+                </HBox>
+            </VBox>
+        </HBox>
+    </VBox>
+    <stylesheets>
+        <URL value="@styles.css"/>
+    </stylesheets>
+</AnchorPane>
