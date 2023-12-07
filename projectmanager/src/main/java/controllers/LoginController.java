@@ -22,17 +22,17 @@ public class LoginController implements Initializable {
 
     @FXML
     private void onLoginClicked(MouseEvent event) throws IOException {
-        // String username = txt_username.getText();
-        // String password = txt_password.getText();
+        String username = txt_username.getText();
+        String password = txt_password.getText();
 
-        // ProjectManagementSystem pms = ProjectManagementSystem.getInstance();
+        ProjectManagementSystem pms = ProjectManagementSystem.getInstance();
 
-        // if (!pms.login(username, password)) {
-        //     lbl_error.setText("Invalid login credentials.");
-        //     return;
-        // }
+        if (!pms.login(username, password)) {
+            lbl_error.setText("Invalid login credentials.");
+            return;
+        }
 
-        App.setRoot("user_home");
+        App.setRoot("project_manager");
     }
 
     @FXML

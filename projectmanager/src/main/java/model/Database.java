@@ -22,8 +22,8 @@ import org.json.simple.parser.ParseException;
  */
 public class Database {
 
-  private static final String USERS_JSON_FILENAME ="user.json";
-  private static final String PROJECTS_JSON_FILENAME ="project.json";
+  private static final String USERS_JSON_FILENAME ="C:\\Users\\spenc\\Desktop\\CSCE 247\\247-final\\projectmanager\\src\\main\\java\\data\\user.json";
+  private static final String PROJECTS_JSON_FILENAME ="C:\\Users\\spenc\\Desktop\\CSCE 247\\247-final\\projectmanager\\src\\main\\java\\data\\project.json";
   private static final String DATE_FORMAT = "MM/dd/yyyy HH:mm:ss";
 
   private static ArrayList<User> allUsers; // Assuming this is loaded once and then queried in memory

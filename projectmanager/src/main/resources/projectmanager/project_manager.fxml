@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
@@ -17,7 +19,7 @@
         </HBox>
         <VBox spacing="10.0" alignment="CENTER">
             <TextField fx:id="txtProjectName" promptText="Project name" styleClass="text-field"/>
-            <Button text="Create" onAction="#onCreateProjectClicked" styleClass="create-button"/>
+            <Button text="Create" onMouseClicked="#onCreateProjectClicked" styleClass="create-button"/>
         </VBox>
     </children>
     <stylesheets>

@@ -25,6 +25,11 @@ public class ProjectPageController implements Initializable {
         tasksListView.getItems().add(newTask);
     }
 
+    @FXML 
+    private void onAddUserClicked(MouseEvent event) {
+        
+    }
+
     private Task createNewTask() {
         // Logic to create a new task, replace this with your actual task creation logic
         return new Task("New Task"); // Replace with the actual constructor

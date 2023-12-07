@@ -53,13 +53,13 @@ public class SignupController implements Initializable {
         }
         
         pms.login(username, password);
-        // User user = pms.getCurrentUser();
+        User user = pms.getCurrentUser();
         switchScreen();
     }
     
     
     private void switchScreen() throws IOException {
-       App.setRoot("user_home");
+       App.setRoot("project_manager");
     }
     
     @Override

@@ -4,7 +4,7 @@
     -fx-background-color: #D3D6D7;
 }
 
-.project-button, .create-button, .action-button {
+.project-button, .create-button, .action-button, button {
     -fx-background-color: #6B95A5;
     -fx-text-fill: white;
     -fx-font-weight: bold;
