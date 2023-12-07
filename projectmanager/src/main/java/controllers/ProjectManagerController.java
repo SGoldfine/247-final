@@ -5,6 +5,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import projectmanager.App;
@@ -14,16 +15,20 @@ import model.Project;
 public class ProjectManagerController implements Initializable {
 
     @FXML
-    private TextField projectNameField;
+    private TextField project_name;
+    @FXML
+    private Label lbl_error;
 
     @FXML
     private void onCreateProjectClicked(MouseEvent event) throws IOException {
-        // String projectName = projectNameField.getText();
-        // Project newProject = new Project(projectName); // Replace with the actual constructor
-        // ProjectManagementSystem pms = ProjectManagementSystem.getInstance();
-        
-        // Assuming a method to handle project creation
-        //pms.handleProjectCreation(newProject); 
+        String projectName = project_name.getText();
+
+        ProjectManagementSystem pms = ProjectManagementSystem.getInstance();
+
+        if(!pms.createProject(projectName)) {
+            lbl_error.setText("Couldn't create project.");
+            return;
+        }
 
         App.setRoot("project_page"); // Navigate to the project page
     }

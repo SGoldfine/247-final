@@ -9,8 +9,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import projectmanager.App;
-import model.*;
-
+import model.ProjectManagementSystem;
 
 public class LoginController implements Initializable {
     @FXML

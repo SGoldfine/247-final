@@ -1,28 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import java.net.URL?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
-<?import javafx.geometry.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
 
-<VBox fx:id="projectManagerPane" alignment="TOP_CENTER" spacing="20.0" prefWidth="600.0" prefHeight="400.0" styleClass="pane-background" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ProjectManagerController">
+<VBox fx:id="projectManagerPane" alignment="TOP_CENTER" prefHeight="400.0" prefWidth="600.0" spacing="20.0" styleClass="pane-background" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ProjectManagerController">
     <padding>
-        <Insets top="20" right="20" bottom="20" left="20"/>
+        <Insets bottom="20" left="20" right="20" top="20" />
     </padding>
     <children>
-        <Label text="Project Manager" styleClass="title-label"/>
-        <HBox spacing="10.0" alignment="CENTER">
-            <Button text="Project 1" styleClass="project-button"/>
-            <Button text="Project 2" styleClass="project-button"/>
-            <Button text="Project 3" styleClass="project-button"/>
+        <Label styleClass="title-label" text="Project Manager" />
+        <HBox alignment="CENTER" spacing="10.0">
+            <Button styleClass="project-button" text="Project 1" />
+            <Button styleClass="project-button" text="Project 2" />
+            <Button styleClass="project-button" text="Project 3" />
         </HBox>
-        <VBox spacing="10.0" alignment="CENTER">
-            <TextField fx:id="txtProjectName" promptText="Project name" styleClass="text-field"/>
-            <Button text="Create" onMouseClicked="#onCreateProjectClicked" styleClass="create-button"/>
+        <VBox alignment="CENTER" spacing="10.0">
+            <TextField fx:id="project_name" promptText="Project Name" styleClass="text-field" />
+            <Button onMouseClicked="#onCreateProjectClicked" styleClass="create-button" text="Create" />
+         <Label fx:id="lbl_error" />
         </VBox>
     </children>
     <stylesheets>
-        <URL value="@styles.css"/>
+        <URL value="@styles.css" />
     </stylesheets>
 </VBox>
