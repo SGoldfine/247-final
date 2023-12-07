@@ -1,11 +1,7 @@
+/*General Styles*/
+
 .pane-background {
     -fx-background-color: #D3D6D7;
-}
-
-.title-label {
-    -fx-font-size: 24px;
-    -fx-text-fill: #333;
-    -fx-font-weight: bold;
 }
 
 .project-button, .create-button, .action-button {
@@ -70,8 +66,8 @@
     -fx-padding: 10px;
 }
 
-
 /* User Settings Styles */
+
 .title-label {
     -fx-font-size: 24px;
     -fx-font-weight: bold;
@@ -128,4 +124,3 @@
     -fx-label-padding: 5;
     -fx-wrap-text: true;
 }
-

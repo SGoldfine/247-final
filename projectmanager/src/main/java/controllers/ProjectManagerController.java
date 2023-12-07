@@ -35,5 +35,6 @@ public class ProjectManagerController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // Initialization logic
+        //projectNameField.setText("Project1");
     }
 }
