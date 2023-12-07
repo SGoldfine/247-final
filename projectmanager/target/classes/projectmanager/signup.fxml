@@ -14,11 +14,11 @@
             <Font size="27.0" />
          </font>
       </Label>
-      <TextField fx:id="txt_username" layoutX="314.0" layoutY="119.0" promptText="First Name" />
-      <TextField fx:id="txt_password" layoutX="314.0" layoutY="155.0" promptText="Last Name" />
-      <TextField fx:id="txt_first_name" layoutX="314.0" layoutY="190.0" promptText="Email" />
-      <TextField fx:id="txt_last_name" layoutX="314.0" layoutY="223.0" promptText="Username" />
-      <TextField fx:id="txt_email" layoutX="314.0" layoutY="255.0" promptText="Password" />
+      <TextField fx:id="txt_username" layoutX="314.0" layoutY="119.0" promptText="Username" />
+      <TextField fx:id="txt_password" layoutX="314.0" layoutY="155.0" promptText="Password" />
+      <TextField fx:id="txt_first_name" layoutX="314.0" layoutY="190.0" promptText="First Name" />
+      <TextField fx:id="txt_last_name" layoutX="314.0" layoutY="223.0" promptText="Last Name" />
+      <TextField fx:id="txt_email" layoutX="314.0" layoutY="255.0" promptText="Email" />
       <Button layoutX="314.0" layoutY="299.0" mnemonicParsing="false" onMouseClicked="#onSignupClicked" prefHeight="25.0" prefWidth="58.0" text="Sign Up" styleClass="create-button"/>
       <Label fx:id="lbl_error" layoutX="126.0" layoutY="349.0" prefHeight="16.0" prefWidth="452.0" textFill="#e80404" />
       <Label layoutX="196.0" layoutY="34.0" text="Project Manager">
