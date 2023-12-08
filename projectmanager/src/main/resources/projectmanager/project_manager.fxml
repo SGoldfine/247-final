@@ -15,13 +15,13 @@
     <children>
         <Label styleClass="title-label" text="Project Manager" />
         <HBox alignment="CENTER" spacing="10.0">
-            <Button styleClass="project-button" text="Project 1" />
-            <Button styleClass="project-button" text="Project 2" />
-            <Button styleClass="project-button" text="Project 3" />
+            <Button onMouseClicked="#onProjectClicked" styleClass="project-button" text="Project 1" />
+            <Button onMouseClicked="#onProjectClicked" styleClass="project-button" text="Project 2" />
+            <Button onMouseClicked="#onProjectClicked" styleClass="project-button" text="Project 3" />
         </HBox>
         <VBox alignment="CENTER" spacing="10.0">
             <TextField fx:id="project_name" promptText="Project Name" styleClass="text-field" />
-            <Button onMouseClicked="#onCreateProjectClicked" styleClass="create-button" text="Create" />
+            <Button onMouseClicked="#onCreateProjectClicked" mnemonicParsing="false" styleClass="create-button" text="Create" />
          <Label fx:id="lbl_error" />
         </VBox>
     </children>
