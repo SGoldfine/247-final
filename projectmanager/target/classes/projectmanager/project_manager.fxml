@@ -23,7 +23,7 @@
             <TextField fx:id="project_name" promptText="Project Name" styleClass="text-field" />
             <Button mnemonicParsing="false" onMouseClicked="#onCreateProjectClicked" styleClass="create-button" text="Create" />
          <Label fx:id="lbl_error" />
-         <Button mnemonicParsing="false" prefHeight="39.0" prefWidth="87.0" styleClass="project-button" text="Logout" />
+         <Button onMouseClicked="#onLogoutClicked" mnemonicParsing="false" prefHeight="39.0" prefWidth="87.0" styleClass="project-button" text="Logout" />
         </VBox>
     </children>
     <stylesheets>
