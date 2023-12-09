@@ -15,7 +15,7 @@ public class ProjectManagementSystem {
   private User user;
   private Project project;
   private ArrayList<Project> projects;
-  private final UserList userList;
+  private UserList userList;
   private final ProjectList projectList;
   private static ProjectManagementSystem pms;
 
@@ -43,6 +43,10 @@ public class ProjectManagementSystem {
    * @return true if login is successful, false otherwise
    */
   public boolean login(String username, String password) {
+    // if(!userList.getUser(username)) return false;
+
+    // user = userList.getUser(username);
+    // return true;
     User user = userList.getUser(username);
     if (user != null && user.getPassword().equals(password)) {
       this.user = user; // Set the user field
@@ -77,32 +81,27 @@ public class ProjectManagementSystem {
    * @param email     the email of the new user
    * @return true if sign up is successful, false otherwise
    */
-  public boolean signUp(
-    String username,
-    String password,
-    String firstName,
-    String lastName,
-    String email
-  ) {
-    boolean isSignUpSuccessful = userList.addUser(
-      username,
-      password,
-      firstName,
-      lastName,
-      email
-    );
-    if (isSignUpSuccessful) {
-      boolean isSaveSuccessful = Database.saveUsers();
-      if (!isSaveSuccessful) {
-        // Handle database save failure
-        System.out.println("Failed to save user data to the database.");
+  public boolean signUp(String username, String password, String firstName, String lastName, String email) {
+      // return userList.addUser(username, password, firstName, lastName, email);
+      boolean isSignUpSuccessful = userList.addUser(
+        username,
+        password,
+        firstName,
+        lastName,
+        email
+      );
+      if (isSignUpSuccessful) {
+        boolean isSaveSuccessful = Database.saveUsers();
+        if (!isSaveSuccessful) {
+          // Handle database save failure
+          System.out.println("Failed to save user data to the database.");
+        }
+      } else {
+        // Handle signup failure
+        System.out.println("User signup failed. Username may already exist.");
       }
-    } else {
-      // Handle signup failure
-      System.out.println("User signup failed. Username may already exist.");
+      return isSignUpSuccessful;
     }
-    return isSignUpSuccessful;
-  }
 
   /**
    * Creates a new project with the given name.
