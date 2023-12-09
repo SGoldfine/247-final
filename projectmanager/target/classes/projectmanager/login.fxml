@@ -9,34 +9,44 @@
 
 <AnchorPane id="AnchorPane" fx:id="login_pane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LoginController">
    <children>
-      <Label layoutX="72.0" layoutY="54.0" text="Login">
+      <Label layoutX="314.0" layoutY="72.0" text="Login">
          <font>
-            <Font name="Century" size="16.0" />
+            <Font name="Century" size="27.0" />
          </font>
       </Label>
-      <Button layoutX="50.0" layoutY="162.0" mnemonicParsing="false" onMouseClicked="#onLoginClicked" prefHeight="39.0" prefWidth="100.0" styleClass="create-button" text="Login">
+      <Button layoutX="314.0" layoutY="195.0" mnemonicParsing="false" onMouseClicked="#onLoginClicked" prefHeight="39.0" prefWidth="100.0" styleClass="create-button" text="Login">
          <font>
             <Font name="Century Gothic" size="12.0" />
          </font>
       </Button>
-      <TextField fx:id="txt_username" layoutX="42.0" layoutY="86.0" prefHeight="29.0" prefWidth="219.0" promptText="Enter Username" />
-      <TextField fx:id="txt_password" layoutX="42.0" layoutY="125.0" prefHeight="29.0" prefWidth="219.0" promptText="Enter Password" />
-      <Label fx:id="lbl_error" layoutX="215.0" layoutY="205.0" prefHeight="16.0" prefWidth="170.0" />
-      <Label layoutX="50.0" layoutY="207.0" text="New User?">
+      <TextField fx:id="txt_username" layoutX="314.0" layoutY="119.0" prefHeight="29.0" prefWidth="153.0" promptText="Enter Username" />
+      <TextField fx:id="txt_password" layoutX="314.0" layoutY="155.0" prefHeight="29.0" prefWidth="153.0" promptText="Enter Password" />
+      <Label fx:id="lbl_error" layoutX="493.0" layoutY="210.0" prefHeight="16.0" prefWidth="170.0" />
+      <Label layoutX="314.0" layoutY="240.0" text="New User?">
          <font>
             <Font name="Century" size="10.0" />
          </font>
       </Label>
-      <Label layoutX="196.0" layoutY="22.0" text="Project Manager">
+      <Label layoutX="228.0" layoutY="27.0" text="Project Manager">
          <font>
             <Font name="Berlin Sans FB Demi Bold" size="28.0" />
          </font>
       </Label>
-      <Button layoutX="50.0" layoutY="222.0" mnemonicParsing="false" onMouseClicked="#onSignupClicked" prefHeight="39.0" prefWidth="100.0" styleClass="create-button" text="Sign Up">
+      <Button layoutX="314.0" layoutY="255.0" mnemonicParsing="false" onMouseClicked="#onSignupClicked" prefHeight="39.0" prefWidth="100.0" styleClass="create-button" text="Sign Up">
          <font>
             <Font name="Century Gothic" size="12.0" />
          </font>
       </Button>
+      <Label layoutX="138.0" layoutY="205.0" text="Project Manager">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="154.0" layoutY="173.0" text="Welcome to the">
+         <font>
+            <Font name="Berlin Sans FB" size="20.0" />
+         </font>
+      </Label>
    </children>
    <stylesheets>
       <URL value="@styles.css" />

@@ -21,8 +21,9 @@
         </HBox>
         <VBox alignment="CENTER" spacing="10.0">
             <TextField fx:id="project_name" promptText="Project Name" styleClass="text-field" />
-            <Button onMouseClicked="#onCreateProjectClicked" mnemonicParsing="false" styleClass="create-button" text="Create" />
+            <Button mnemonicParsing="false" onMouseClicked="#onCreateProjectClicked" styleClass="create-button" text="Create" />
          <Label fx:id="lbl_error" />
+         <Button mnemonicParsing="false" prefHeight="39.0" prefWidth="87.0" styleClass="project-button" text="Logout" />
         </VBox>
     </children>
     <stylesheets>
