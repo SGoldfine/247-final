@@ -21,14 +21,14 @@ public class ProjectManagerController implements Initializable {
 
     @FXML
     private void onCreateProjectClicked(MouseEvent event) throws IOException {
-        String name = project_name.getText();
+        // String name = project_name.getText();
 
-        ProjectManagementSystem pms = ProjectManagementSystem.getInstance();
+        // ProjectManagementSystem pms = ProjectManagementSystem.getInstance();
 
-        if(!pms.createProject(name)) {
-            lbl_error.setText("Couldn't create project.");
-            return;
-        }
+        // if(!pms.createProject(name)) {
+        //     lbl_error.setText("Couldn't create project.");
+        //     return;
+        // }
 
         App.setRoot("project_page"); // Navigate to the project page
     }
