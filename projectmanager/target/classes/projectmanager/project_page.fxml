@@ -10,23 +10,26 @@
 
 <AnchorPane fx:id="projectPane" prefHeight="600" prefWidth="800" styleClass="pane-background" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ProjectPageController">
     <children>
-        <Label styleClass="title-label" text="Project 1" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0" />
+        <Label layoutX="14.0" layoutY="10.0" styleClass="title-label" text="Project 1" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="10.0" />
         <HBox spacing="10.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="60.0">
             <VBox spacing="5.0" styleClass="task-column">
                 <Label text="Abandoned" />
-                <ListView fx:id="abandonedTasksListView" />
+            <Button onMouseClicked="#onTaskClicked" mnemonicParsing="false" styleClass="project-button" text="Task 3" />
             </VBox>
             <VBox spacing="5.0" styleClass="task-column">
                 <Label text="ToDo" />
-                <ListView fx:id="todoTasksListView" />
+            <Button onMouseClicked="#onTaskClicked" mnemonicParsing="false" styleClass="project-button" text="Task 7" />
             </VBox>
             <VBox spacing="5.0" styleClass="task-column">
                 <Label text="Doing" />
-                <ListView fx:id="doingTasksListView" />
+            <Button onMouseClicked="#onTaskClicked" mnemonicParsing="false" styleClass="project-button" text="Task 2" />
+            <Button onMouseClicked="#onTaskClicked" mnemonicParsing="false" styleClass="project-button" text="Task 6" />
             </VBox>
             <VBox spacing="5.0" styleClass="task-column">
                 <Label text="Done" />
-                <ListView fx:id="doneTasksListView" />
+            <Button onMouseClicked="#onTaskClicked" mnemonicParsing="false" styleClass="project-button" text="Task 1" />
+            <Button onMouseClicked="#onTaskClicked" mnemonicParsing="false" styleClass="project-button" text="Task 4" />
+            <Button onMouseClicked="#onTaskClicked" mnemonicParsing="false" styleClass="project-button" text="Task 5" />
             </VBox>
             <VBox spacing="10.0" styleClass="user-actions-container">
                 <ListView fx:id="userListView" prefHeight="388.0" prefWidth="200.0" />
@@ -36,6 +39,8 @@
                 </HBox>
             </VBox>
         </HBox>
+      <Button onMouseClicked="#onReturnClicked" layoutX="511.0" layoutY="14.0" mnemonicParsing="false" styleClass="project-button" text="Return" />
+      <Button onMouseClicked="#onLogoutClicked" layoutX="609.0" layoutY="14.0" mnemonicParsing="false" styleClass="project-button" text="Logout" />
     </children>
     <stylesheets>
         <URL value="@styles.css" />
