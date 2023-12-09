@@ -19,10 +19,8 @@ public class ProjectPageController implements Initializable {
     private Project currentProject; // Assuming you have a reference to the current project
 
     @FXML
-    private void onAddTaskClicked(MouseEvent event) {
-        Task newTask = createNewTask(); // Replace with the actual method to create a new task
-        //currentProject.addTask(newTask); // Assuming the Project class has an addTask method
-        tasksListView.getItems().add(newTask);
+    private void onAddTaskClicked() throws IOException {
+        App.setRoot("add_task");
     }
 
     @FXML 
