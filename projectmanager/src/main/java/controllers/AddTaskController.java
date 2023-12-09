@@ -42,8 +42,6 @@ public class AddTaskController {
         // String taskName = taskNameTextField.getText();
         // String taskStatus = taskStatusComboBox.getValue();
         App.setRoot("project_page");
-
-        // You can add more logic here, for example, adding the task to a list or database.
     }
 
     @FXML 
