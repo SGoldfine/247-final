@@ -1,3 +1,7 @@
+package controllers;
+
+import java.io.IOException;
+
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
@@ -32,7 +36,7 @@ public class AddTaskController {
     }
 
     @FXML
-    private void onAddTaskClicked() {
+    private void onAddTaskClicked() throws IOException {
         String taskName = taskNameTextField.getText();
         String taskStatus = taskStatusComboBox.getValue();
         App.setRoot("project_page");
